@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Entertainment Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <!-- Unified style and favicon -->
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #2a2a40);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .auth-container {
+      background-color: #333;
+      padding: 3em;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #000;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    input[type="Email Or Username"]{
+      width: 90%;
+      padding:  0.8em;
+      margin: 0.6em 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.5em;
+    }
+    input[type="password"] {
+      width: 90%;
+      padding: 0.8em;
+      margin: 0.6em 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.5em;
+    }
+
+    button {
+      background-color: #ff0055;
+      color: white;
+      border: none;
+      padding: 0.8em 2em;
+      margin-top: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff3366;
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      margin-top: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="home.html" class="logo"><img src="logo.svg" alt="Entertainment Hub Logo">Entertainment Hub</a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="live-events.html">Live Events</a></li>
+        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="auth-container">
+    <h2>Create Your Account</h2>
+    <form action="/register" method="POST">
+      <input type="text" name="username" placeholder="Email or Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="Login.html">Login here</a></p>
+    <a href="home.html">← Back to Home</a>
+  </div>
+  <footer>
+    &copy; 2025 Entertainment Hub. All rights reserved.
+  </footer>
+</body>
+</html>
